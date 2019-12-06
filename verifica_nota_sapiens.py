@@ -11,8 +11,11 @@ import time
 import os.path
 import yagmail
 
-MATRICULA = "matricula aqui"
-SENHA =  "senha aqui"
+# Modificar campos
+MATRICULA = "matricula"
+SENHA =  "senha"
+enviar_email_para = "email@gmail.com"
+
 
 LOGIN_URL = "https://sapiens.dti.ufv.br/sapiens_crp/CheckLogin.asp"
 
@@ -21,7 +24,6 @@ PATH = '/home/thiago/Downloads/phantomjs-2.1.1-linux-x86_64/bin/phantomjs'
 # connect to smtp server.
 yag_smtp_connection = yagmail.SMTP( user="email.teste.sapiens@gmail.com", password="emailtester01", host='smtp.gmail.com')
 
-enviar_email_para = "email aqui"
 
 disciplina_nomes = []
 notas_atualizadas = []
